@@ -1,9 +1,10 @@
 pipeline {
     agent any 
+     docker { image 'mysql:lts' }
     stages {
        stage("build") {
           steps {
-           sh 'docker pull mysql:lts'
+           sh 'date'
          }
        }
        stage("test") {
