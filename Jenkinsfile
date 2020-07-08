@@ -1,6 +1,6 @@
 pipeline {
     agent any 
-     docker { image 'mysql:lts' }
+     docker { image 'mysql' }
     stages {
        stage("build") {
           steps {
