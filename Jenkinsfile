@@ -8,7 +8,7 @@ pipeline {
        }
        stage("test") {
          steps {
-            sh 'ifconfig'
+            sh 'curl meuip.com.br | grep "Meu ip"'
           }
        }
         stage("deploy") {
