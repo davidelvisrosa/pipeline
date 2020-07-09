@@ -1,7 +1,6 @@
 pipeline {
     agent any 
-      docker { image 'node:7-alpine' }
-    stages {
+      stages {
        stage("build") {
           steps {
            sh 'date'
